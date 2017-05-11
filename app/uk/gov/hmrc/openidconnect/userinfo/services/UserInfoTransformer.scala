@@ -45,7 +45,7 @@ trait UserInfoTransformer {
   }
 
   private def formattedAddress(desAddress: DesAddress, country: Option[String]) = {
-    Seq(desAddress.line1, desAddress.line2, desAddress.line3, desAddress.line4, desAddress.postcode, country).flatten.mkString("\n")
+    Seq(desAddress.line1, desAddress.line2, desAddress.line3, desAddress.line4, desAddress.line5, desAddress.postcode, country).flatten.mkString("\n")
   }
 
   private case class UserProfile(firstName: Option[String], familyName: Option[String], middleName: Option[String], birthDate: Option[LocalDate])

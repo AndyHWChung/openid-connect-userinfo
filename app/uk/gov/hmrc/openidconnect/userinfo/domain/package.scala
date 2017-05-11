@@ -33,6 +33,7 @@ package object domain {
   (JsPath \ "line2").readNullable[String] and
   (JsPath \ "line3").readNullable[String] and
   (JsPath \ "line4").readNullable[String] and
+  (JsPath \ "line5").readNullable[String] and
   (JsPath \ "postcode").readNullable[String] and
   (JsPath \ "countryCode").readNullable[Int]
   )(DesAddress.apply _)
